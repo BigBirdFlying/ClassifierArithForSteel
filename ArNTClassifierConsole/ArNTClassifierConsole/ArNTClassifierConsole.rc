@@ -1,0 +1,515 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ArNTClassifierConsole.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ArNTClassifierConsole.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+IDI_ICON3               ICON                    "res\\ico00001.ico"
+IDI_ICON4               ICON                    "res\\ico00002.ico"
+IDI_ICON5               ICON                    "res\\ico00003.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ArNTClassifierConsole"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ArNTClassifierConsole，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_ARNTCLASSIFIERCONSOLE_DIALOG DIALOGEX 0, 0, 779, 393
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ArNTClassifierConsole"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_MAIN,"SysTabControl32",TCS_FIXEDWIDTH,7,4,765,382
+END
+
+IDD_DIALOG_SAMPLE_COLLECTION DIALOGEX 0, 0, 893, 404
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_IMAGEPATH,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,6,67,130,328
+    PUSHBUTTON      "打开目录",IDC_BUTTON_OPENDIR,395,26,50,15
+    EDITTEXT        IDC_EDIT_FILEPATH,230,27,155,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SEG_SELECT,230,47,97,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "选取图像分割算法",IDC_STATIC,147,48,75,11,WS_BORDER
+    PUSHBUTTON      "自动提取区域",IDC_BUTTON_AUTOSEG,349,45,96,14
+    CONTROL         "",IDC_LIST_IMGSAMPLE,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,145,331,741,64
+    CTEXT           "样本集路径",IDC_STATIC,147,8,75,11,WS_BORDER
+    EDITTEXT        IDC_EDIT_SAMPLESET_PATH,230,7,135,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "加载样本集路径",IDC_BUTTON_SAMPLESET_PATH,373,7,72,15
+    CTEXT           "待采样图像路径",IDC_STATIC,147,28,75,11,WS_BORDER
+    CONTROL         "",IDC_IMAGESHOW,"Static",SS_BLACKRECT,146,67,740,261
+    CONTROL         "",IDC_LOGO,"Static",SS_BITMAP | NOT WS_VISIBLE,38,30,15,13
+    PUSHBUTTON      "配置缺陷类别",IDC_BUTTON_CONFIGDEFECTCLASS,449,7,72,15
+    LISTBOX         IDC_LIST_SHOW_LOGINFO,525,7,361,53,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TEST_FUNC,452,47,67,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "功能函数测试",IDC_STATIC,452,29,67,11,WS_BORDER
+    CTEXT           "图像坐标",IDC_STATIC_IMG_POS,79,50,57,10,WS_BORDER
+END
+
+IDD_DIALOG_CLASSIFIER DIALOGEX 0, 0, 893, 417
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "样本图像路径",IDC_STATIC,9,8,65,11,WS_BORDER
+    EDITTEXT        IDC_EDIT_SAMPLEIMGPATH,78,7,207,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开样本集路径",IDC_BUTTON_GET_IMGSAMPLEPATH,289,7,67,14
+    CONTROL         "样本规范化",IDC_CHECK_NORMIMGSIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,183,25,56,10
+    COMBOBOX        IDC_COMBO_IMGSIZE,78,23,81,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_TRAINIMGSHOW,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,82,466,149
+    CONTROL         "",IDC_PROGRESS_LOADINGSAMPLEIMG,"msctls_progress32",WS_BORDER,9,53,348,11
+    CTEXT           "训练集各类别缺陷数量",IDC_STATIC,67,68,95,11,WS_BORDER
+    COMBOBOX        IDC_COMBO_TRAIN_CLASSNUM,171,67,187,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "加载图像",IDC_BUTTON_LOADING_SAMPLEIMG,289,23,67,14
+    CTEXT           "添加特征",IDC_STATIC,556,108,39,11,WS_BORDER
+    LISTBOX         IDC_LIST_FEAT_FROM_CHOOSE,482,90,69,119,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_FEAT_TO_CHOOSE,599,90,69,119,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">>",IDC_BUTTON_FEAT_ADD,557,127,35,14
+    PUSHBUTTON      "<<",IDC_BUTTON_FEAT_SUB,557,149,35,14
+    CTEXT           "删除特征",IDC_STATIC,555,171,39,11,WS_BORDER
+    CONTROL         "",IDC_TAB_CLASSIFIER,"SysTabControl32",TCS_BOTTOM | TCS_FIXEDWIDTH | WS_GROUP | WS_TABSTOP,677,89,208,120
+    CONTROL         "自动获取特征",IDC_CHECK_AUTO_GET_FEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,482,215,64,10
+    PUSHBUTTON      "提取特征向量",IDC_BUTTON_GET_FEAT,569,211,99,14
+    CONTROL         "",IDC_LIST_TESTIMGSHOW,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,248,466,149
+    CTEXT           "测试集图像",IDC_STATIC,9,235,55,11,WS_BORDER
+    CTEXT           "训练集图像",IDC_STATIC,9,68,55,11,WS_BORDER
+    CTEXT           "样本图像大小",IDC_STATIC,9,23,65,11,WS_BORDER
+    CTEXT           "测试集各类别缺陷数量",IDC_STATIC,67,235,95,11,WS_BORDER
+    COMBOBOX        IDC_COMBO_TEST_CLASSNUM,171,233,187,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "测试集百分比",IDC_STATIC,9,39,65,11,WS_BORDER
+    COMBOBOX        IDC_COMBO_TESTSET_PERCENT,78,38,81,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "训练分类器",IDC_BUTTON_TRAIN_CLASSIFIER,677,62,98,15
+    PUSHBUTTON      "测试分类器",IDC_BUTTON_TEST_CLASSIFIER,785,62,98,15
+    LISTBOX         IDC_LIST_SHOWINFO,364,7,522,56,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "训练并测试分类器",IDC_BUTTON_TRAIN_AND_TEST_CLASSIFIER,677,211,207,14
+    GROUPBOX        "特征提取区",IDC_STATIC,477,78,196,153
+    GROUPBOX        "分类器选择区",IDC_STATIC,674,78,212,153
+    GROUPBOX        "结果统计区",IDC_STATIC_RESULT,479,236,405,161
+    CONTROL         "",IDC_PIC_RESULTSHOW,"Static",SS_BLACKFRAME,697,242,186,153
+    CTEXT           "  混淆矩阵显示->>",IDC_STATIC,609,382,85,11,WS_BORDER
+    CTEXT           "综合准确率",IDC_STATIC,499,258,52,11,WS_BORDER
+    EDITTEXT        IDC_EDIT_RESULT_ACCURACY,559,257,58,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "显示分类结果",IDC_BUTTON_SHOWCLASSIFY_RESULT,489,381,113,14
+END
+
+IDD_DIALOG_DEFECTCLASSIFY DIALOGEX 0, 0, 903, 399
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_DEFECT_DB_IP,72,7,88,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "缺陷数据库IP",IDC_STATIC,7,7,57,11,WS_BORDER
+    CTEXT           "数据库类型",IDC_STATIC,7,25,57,11,WS_BORDER
+    COMBOBOX        IDC_COMBO_DB_TYPE,72,24,88,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "连接数据库并分类",IDC_BUTTON_CONNECT_DB,7,60,151,15
+    CTEXT           "缺陷图像IP",IDC_STATIC,7,43,57,11,WS_BORDER
+    COMBOBOX        IDC_COMBO_DEFECT_IMG_IP,72,42,88,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_SHOW_LOAD_INFO,7,95,150,173,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "相关信息",IDC_STATIC,7,80,59,11,WS_BORDER
+    GROUPBOX        "数据库信息",IDC_STATIC_DBDATAINFO,166,7,719,385
+    CONTROL         "",IDC_LIST_DBDATA_1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,193,18,489,38
+    CONTROL         "",IDC_LIST_DBDATA_2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,193,63,489,38
+    CONTROL         "",IDC_LIST_DBDATA_3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,193,108,489,38
+    CONTROL         "",IDC_LIST_DBDATA_4,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,193,153,489,38
+    CONTROL         "",IDC_LIST_DBDATA_5,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,193,198,489,38
+    CONTROL         "",IDC_LIST_DBDATA_6,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,193,243,489,38
+    CONTROL         "",IDC_LIST_DBDATA_7,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,193,288,489,38
+    CONTROL         "",IDC_LIST_DBDATA_8,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,193,333,489,38
+    CTEXT           "提示信息",IDC_STATIC,7,272,59,11,WS_BORDER
+    LISTBOX         IDC_LIST_SHOW_WARN_INFO,7,288,150,104,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CLASSIFIER_BP DIALOGEX 0, 0, 317, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "分类器文件名",IDC_STATIC,16,68,63,10,WS_BORDER
+    EDITTEXT        IDC_EDIT_BP_CLASSIFIER_FILENAME,83,67,68,14,ES_AUTOHSCROLL
+    CTEXT           "隐藏层节点数",IDC_STATIC,16,14,63,10,WS_BORDER
+    EDITTEXT        IDC_EDIT_HIDE_BODE_NUM,83,13,68,14,ES_AUTOHSCROLL
+    CTEXT           "最大迭代次数",IDC_STATIC,16,32,63,10,WS_BORDER
+    EDITTEXT        IDC_EDIT_ITER_NUM,83,31,68,14,ES_AUTOHSCROLL
+    CTEXT           "结果精确度",IDC_STATIC,16,50,63,10,WS_BORDER
+    EDITTEXT        IDC_EDIT_EPSILON,83,49,68,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CLASSIFIER_SVM DIALOGEX 0, 0, 285, 172
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "最大迭代次数",IDC_STATIC,8,7,60,10,WS_BORDER
+    CTEXT           "结果精确度",IDC_STATIC,8,22,60,10,WS_BORDER
+    CTEXT           "分类器文件名",IDC_STATIC,8,37,60,10,WS_BORDER
+    EDITTEXT        IDC_EDIT_ITER_NUM,75,7,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EPSILON,75,21,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SVM_CLASSIFIER_FILENAME,75,36,51,14,ES_AUTOHSCROLL
+    CONTROL         "是否自动优化参数",IDC_CHECK_OPTIMIZE_PARAM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,9,80,10
+    CTEXT           "核函数选择",IDC_STATIC,8,52,60,10,WS_BORDER
+    CTEXT           "Gamma选择",IDC_STATIC,8,82,60,10,WS_BORDER
+    CTEXT           "C选择",IDC_STATIC,8,67,60,10,WS_BORDER
+    COMBOBOX        IDC_COMBO_SVM_CLASSIFIER_KEN,75,51,51,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SVM_CLASSIFIER_C,75,65,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SVM_CLASSIFIER_GAMMA,75,80,51,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CLASSIFIER_TREE DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "树的个数",IDC_STATIC,7,7,56,10,WS_BORDER
+    CTEXT           "结果精确度",IDC_STATIC,7,24,56,10,WS_BORDER
+    CTEXT           "分类器文件名",IDC_STATIC,7,41,56,10,WS_BORDER
+    EDITTEXT        IDC_EDIT_TREE_NUM,65,7,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EPSILON,65,23,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RTREE_CLASSIFIER_FILENAME,65,40,69,14,ES_AUTOHSCROLL
+    CTEXT           "设置权重",IDC_STATIC,7,59,56,10,WS_BORDER
+    CONTROL         "优化各类权重",IDC_CHECK_RTREE_CLASSIFIER_PROIOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,59,64,10
+END
+
+IDD_DIALOG_CLASSIFIER_BOOSTING DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "弱分类器数量",IDC_STATIC,7,7,64,11,WS_BORDER
+    CTEXT           "结果精确度",IDC_STATIC,7,24,64,11,WS_BORDER
+    CTEXT           "分类器文件名",IDC_STATIC,7,42,64,11,WS_BORDER
+    EDITTEXT        IDC_EDIT_WEAK_CLASSIFIER_NUM,74,7,76,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EPSILON,74,23,76,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOOSTING_CLASSIFIER_FILENAME,74,39,76,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CLASSIFIER_CNN DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "网络结构文件",IDC_STATIC,7,9,63,10,WS_BORDER
+    EDITTEXT        IDC_EDIT_CNN_NETFILE,80,7,67,14,ES_AUTOHSCROLL
+    CTEXT           "模型文件",IDC_STATIC,7,25,63,10,WS_BORDER
+    EDITTEXT        IDC_EDIT_CNN_MODELFILE,80,23,67,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SHOW_ORGINIMG DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "原始图像显示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IMG_SHOW,"Static",SS_BLACKRECT,7,7,302,169
+END
+
+IDD_DIALOG_CONFIG_DEFECTCLASS DIALOGEX 0, 0, 229, 219
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "配置缺陷类别"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_CLASS_FROM_CHOOSE,6,19,81,160,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "待选类别",IDC_STATIC,9,8,33,8
+    LISTBOX         IDC_LIST_CLASS_TO_CHOOSE,141,20,81,160,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "已选类别",IDC_STATIC,140,8,33,8
+    PUSHBUTTON      ">>",IDC_BUTTON_CLASS_ADD,89,66,50,17
+    PUSHBUTTON      "<<",IDC_BUTTON_CLASS_SUB,89,110,50,17
+    PUSHBUTTON      "修改",IDC_BUTTON_OK,7,186,92,20
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,130,186,92,20
+END
+
+IDD_DIALOG_HELP DIALOGEX 0, 0, 840, 361
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "北京科技大学"
+            VALUE "FileDescription", "分类器控制台"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ArNTClassifierConsole.exe"
+            VALUE "LegalCopyright", "TODO: (C) <北京科技大学>。保留所有权利。"
+            VALUE "OriginalFilename", "ArNTClassifierConsole.exe"
+            VALUE "ProductName", "<分类器控制台程序>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ARNTCLASSIFIERCONSOLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 772
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 386
+    END
+
+    IDD_DIALOG_SAMPLE_COLLECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 886
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 397
+    END
+
+    IDD_DIALOG_CLASSIFIER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 886
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 401
+    END
+
+    IDD_DIALOG_DEFECTCLASSIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 896
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 392
+    END
+
+    IDD_DIALOG_CLASSIFIER_BP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_CLASSIFIER_SVM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DIALOG_CLASSIFIER_TREE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_CLASSIFIER_BOOSTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_CLASSIFIER_CNN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_SHOW_ORGINIMG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_CONFIG_DEFECTCLASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_DIALOG_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 833
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 354
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_ADD_DEFECT MENU 
+BEGIN
+    POPUP "添加缺陷"
+    BEGIN
+        MENUITEM "新类别",                         ID_ADDNEW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG_LOGO            PNG                     "res\\LOGO.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO         BITMAP                  "res\\LOGO.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ArNTClassifierConsole(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ArNTClassifierConsole.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

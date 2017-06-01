@@ -1,0 +1,355 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ArNTTestArithApp.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ArNTTestArithApp"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,14,14,20,20
+    LTEXT           "ArNTTestArithApp，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,114,42,50,14,WS_GROUP
+END
+
+IDD_ARNTTESTARITHAPP_DIALOG DIALOGEX 0, 0, 575, 385
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "算法程序"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "图像源",IDC_STATIC,7,1,22,8
+    LISTBOX         IDC_LISTIMGSRC,7,11,252,28,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "缺陷数据库服务",IDC_STATIC,7,40,49,8
+    LISTBOX         IDC_LSTDEFECTDB,7,51,252,28,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "缺陷图像服务",IDC_STATIC,7,80,42,8
+    LISTBOX         IDC_LSTDEFECTIMG,7,91,252,28,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "上表需要处理信息",IDC_STATIC,7,147,56,8
+    LISTBOX         IDC_TOPDETECTHISTIMG,7,157,252,38,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "下表需要处理信息",IDC_STATIC,7,196,56,8
+    LISTBOX         IDC_BOTTOMDETECTHISTIMG,7,207,252,38,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "可选相机列表",IDC_STATIC,264,1,42,8
+    LISTBOX         IDC_LISTCAMLIST,264,11,70,47,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "选择相机",IDC_STATIC,358,29,28,8
+    EDITTEXT        IDC_EDTSELCAM,396,26,56,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    LTEXT           "相机图像路径",IDC_STATIC,344,11,42,8
+    EDITTEXT        IDC_EDTCAMIMGPATH,396,8,172,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    LTEXT           "图像索引",IDC_STATIC,475,29,28,8
+    EDITTEXT        IDC_EDTIMGINDEX,512,26,56,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    LTEXT           "图像总数",IDC_STATIC,358,47,28,8
+    EDITTEXT        IDC_EDTIMGNUM,396,44,56,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "显示图像",IDC_BTNSHOWIMG,267,113,42,14
+    PUSHBUTTON      "缺陷检测",IDC_BTNDETECT,318,113,46,14
+    CONTROL         "",IDC_SPINREVIEW,"msctls_updown32",UDS_ARROWKEYS | UDS_HORZ,377,113,52,14
+    LISTBOX         IDC_LISTDEFECT,267,168,301,85,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDTDEFECTNUM,304,152,33,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    CONTROL         "自动测试",IDC_CHKAUTOWRITEDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,512,44,40,14
+    PUSHBUTTON      "获取缺陷图像",IDC_GETDTIMG,439,113,55,15
+    PUSHBUTTON      "获取区域缺陷图像",IDC_BTNCROPDTIMG,501,113,67,15
+    GROUPBOX        "缺陷查询",IDC_STATIC,267,308,147,49
+    LTEXT           "指定相机号",IDC_STATIC,274,320,35,8
+    COMBOBOX        IDC_CMBSELCAM,312,318,45,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "指定流水号",IDC_STATIC,273,340,35,8
+    EDITTEXT        IDC_EDTSELSTEELNO,310,338,48,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "缺陷查询",IDC_BTNSEARCHDEFECT,361,318,48,34,0,WS_EX_STATICEDGE
+    LTEXT           "模拟图像路径",IDC_STATIC,267,63,42,8
+    EDITTEXT        IDC_EDTSIMULDIR,314,61,202,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_BTNSETDIR,528,61,40,14
+    LTEXT           "模拟图像数量",IDC_STATIC,267,80,42,8
+    EDITTEXT        IDC_EDTSIMULIMGNUM,315,78,45,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    LTEXT           "当前图像索引",IDC_STATIC,403,81,42,8
+    EDITTEXT        IDC_EDTCURRINDEX,451,78,46,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    LTEXT           "模拟图像文件",IDC_STATIC,267,98,42,8
+    EDITTEXT        IDC_EDTCURRSIMULIMGPATH,314,95,201,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_BTNCURRSIMULIMGPATH,528,95,40,14
+    LTEXT           "辅助开发包版本",IDC_STATIC,8,352,49,8
+    EDITTEXT        IDC_EDTONLINEHLEPRVER,7,363,561,14,ES_MULTILINE | ES_AUTOHSCROLL | WS_DISABLED,WS_EX_STATICEDGE
+    PUSHBUTTON      "注册通知程序",IDC_BTNREGAPP,259,276,47,17,NOT WS_VISIBLE,WS_EX_STATICEDGE
+    LTEXT           "算法时间",IDC_STATIC,267,135,29,8
+    EDITTEXT        IDC_EDTARITHTIME,304,132,33,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    CONTROL         "开始检测",IDC_CHECKDETECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,352,133,43,10
+    PUSHBUTTON      "跳转到当前图像",IDC_BTNFROMCURRPOS,402,131,55,14
+    LTEXT           "开始检测长度(mm)",IDC_STATIC,468,134,62,8
+    EDITTEXT        IDC_EDTSTARTDETECTLEN,530,132,38,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "清除记录",IDC_BTNCLEAR,266,151,35,14
+    PUSHBUTTON      "跳转到",IDC_BTNJUMPTO,504,78,64,14
+    LTEXT           "错误信息",IDC_STATIC,267,256,30,11
+    LISTBOX         IDC_LSTERROR,266,268,302,36,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "检测状态信息",IDC_STATIC,7,120,42,8
+    EDITTEXT        IDC_EDTDETECTSTATUSINFO,7,131,252,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    CONTROL         "支持延时",IDC_CHKDELAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,249,37,10
+    EDITTEXT        IDC_EDTDELYTIME,84,248,28,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    LTEXT           "延时时间：",IDC_STATIC,46,250,35,8
+    EDITTEXT        IDC_EDTTOPDELYINFO,115,248,144,14,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    CONTROL         "",IDC_WAVE_DRAW,"Static",SS_BLACKFRAME,18,282,230,54,WS_EX_STATICEDGE
+    LTEXT           "缺陷数量统计图：",IDC_STATIC,8,270,56,8
+    GROUPBOX        "算法指定",IDC_STATIC,420,308,147,49
+    LTEXT           "选择算法：",IDC_STATIC,424,321,35,8
+    COMBOBOX        IDC_COMBO_SELRCTALGO,462,318,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "加载算法",IDC_BUTTON_ADDALGO,513,317,50,14
+    EDITTEXT        IDC_EDIT_ALGOINFO,426,336,135,14,ES_AUTOHSCROLL
+END
+
+IDD_SHOWPANEL DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_SHOWDLG DIALOGEX 0, 0, 531, 234
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "显示窗口"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_SEARCHDEFECT DIALOGEX 0, 0, 617, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "缺陷记录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LSTDEFECT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,297,287
+    GROUPBOX        "缺陷图像",IDS_DEFECTIMG,309,76,301,218
+    GROUPBOX        "缺陷信息",IDC_STATIC,308,7,302,67
+    LTEXT           "缺陷总数",IDC_STATIC,316,18,33,8
+    EDITTEXT        IDC_EDTDTNUM,355,15,79,14,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,319,36,8,8
+    EDITTEXT        IDC_EDTDTID,335,32,40,14,ES_AUTOHSCROLL
+    LTEXT           "相机号",IDC_STATIC,380,34,25,8
+    EDITTEXT        IDC_EDTCAMNO,407,31,40,14,ES_AUTOHSCROLL
+    LTEXT           "钢板号",IDC_STATIC,452,33,25,8
+    EDITTEXT        IDC_EDTDTSTEELNO,479,31,40,14,ES_AUTOHSCROLL
+    LTEXT           "图像号",IDC_STATIC,524,33,25,8
+    EDITTEXT        IDC_EDTIMGNO,555,31,40,14,ES_AUTOHSCROLL
+    LTEXT           "类别",IDC_STATIC,315,54,17,8
+    EDITTEXT        IDC_EDTDTCLASS,335,52,112,14,ES_AUTOHSCROLL
+END
+
+IDD_INIT DIALOGEX 0, 0, 316, 107
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "初始化窗口"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,7,7,302,93,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,5,1,1
+ PRODUCTVERSION 2,5,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "该程序用于提供测试用的算法程序"
+            VALUE "CompanyName", "北京科技大学高效轧制国家工程研究中心"
+            VALUE "FileDescription", "算法测试程序"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ArNTTestArithApp.exe"
+            VALUE "LegalCopyright", "北京科技大学高效轧制国家工程研究中心。保留所有权利。"
+            VALUE "OriginalFilename", "ArNTTestArithApp.exe"
+            VALUE "ProductName", "算法测试程序"
+            VALUE "ProductVersion", "2, 5, 1, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_ARNTTESTARITHAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 569
+        VERTGUIDE, 259
+        VERTGUIDE, 568
+        BOTTOMMARGIN, 377
+        HORZGUIDE, 148
+    END
+
+    IDD_SHOWPANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_SHOWDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 524
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_SEARCHDEFECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 610
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+    END
+
+    IDD_INIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACKGROUND          BITMAP                  "res\\BackGround.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_MAIN           ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ArNTTestArithApp(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+//#include "res\ArNTTestArithApp.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
